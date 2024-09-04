@@ -1,7 +1,7 @@
 import React from "react";
-import YouTube from "../../Assets/YouTube.png";
+import loginPage from "../../Assets/LoginPage.png";
 
-const Youtube = () => {
+const LoginPage = () => {
 
   const handleClick = () => {
     console.log("Button clicked");
@@ -10,16 +10,15 @@ const Youtube = () => {
     <div
       className={`w-[32%] h-[48vh] py-2 border mx-[2%] group rounded-3xl overflow-hidden cursor-pointer hover:scale-110 duration-500`}
     >
-      <div className="">
-        <img alt="image" src={YouTube} />
+      <div>
+        <img alt="img" src={loginPage} />
       </div>
 
-      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[100%] duration-200">
-        <p className="text- bg-black bg-opacity-50  px-[15%] mb-5">
-          ReactTube is a cutting-edge video streaming platform built with
-          React.js and Redux for a seamless user experience. Designed for high
-          performance and speed, ReactTube offers fast loading times to keep you
-          engaged with minimal wait.
+      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[100%] duration-200 ">
+        <p className="text- bg-black bg-opacity-50  px-[20%] mb-5">
+          LoginVista is an elegantly designed login page built using just HTML,
+          CSS, and JavaScript. This minimalist yet visually interface focuses on
+          providing a seamless and stylish user authentication experience.
           <img
             className=" bg-white rounded-full border mt-10 mb-25 border-white opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
             src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
@@ -31,4 +30,4 @@ const Youtube = () => {
   );
 };
 
-export default Youtube;
+export default LoginPage;
