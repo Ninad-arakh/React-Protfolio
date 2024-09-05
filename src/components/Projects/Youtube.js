@@ -1,10 +1,17 @@
 import React from "react";
 import YouTube from "../../Assets/YouTube.png";
+import useProject from "../../Hook/useProject";
+import { useNavigate } from "react-router-dom";
 
 const Youtube = () => {
 
+  const navigate = useNavigate()
+
+  useProject();
+
   const handleClick = () => {
-    console.log("Button clicked");
+    navigate(`/singleProject?id=${1}`)
+
   }
   return (
     <div
@@ -21,7 +28,7 @@ const Youtube = () => {
           performance and speed, ReactTube offers fast loading times to keep you
           engaged with minimal wait.
           <img
-            className=" bg-white rounded-full border mt-10 mb-25 border-white opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
+            className=" bg-white rounded-full border-4 mt-10 mb-25 border-stone-800 hover:border-dashed opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center shadow-2xl"
             src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
             onClick={handleClick}
           />

@@ -1,11 +1,15 @@
 import React from "react";
 import loginPage from "../../Assets/LoginPage.png";
+import useProject from "../../Hook/useProject";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  useProject();
 
   const handleClick = () => {
-    console.log("Button clicked");
-  }
+    navigate("/singleProject?id=" + 3);
+  };
   return (
     <div
       className={`w-[32%] h-[48vh] py-2 border mx-[2%] group rounded-3xl overflow-hidden cursor-pointer hover:scale-110 duration-500`}
@@ -20,7 +24,7 @@ const LoginPage = () => {
           CSS, and JavaScript. This minimalist yet visually interface focuses on
           providing a seamless and stylish user authentication experience.
           <img
-            className=" bg-white rounded-full border mt-10 mb-25 border-white opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
+            className=" bg-white rounded-full border-4 mt-10 mb-25 border-stone-800 hover:border-dashed  opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
             src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
             onClick={handleClick}
           />

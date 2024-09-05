@@ -1,10 +1,15 @@
 import React from "react";
 import netflix from "../../Assets/Netflix.png";
+import useProject from "../../Hook/useProject";
+import { useNavigate } from "react-router-dom";
 
 const Netflix = () => {
 
+  const navigate = useNavigate();
+    useProject();
+    
   const handleClick = () => {
-    console.log("Button clicked");
+    navigate("/singleProject?id=" + 2);
   }
   return (
     <div
@@ -21,7 +26,7 @@ const Netflix = () => {
           offers rapid content loading to keep you engaged without unnecessary
           delays.
         <img
-          className=" bg-white rounded-full border mt-10 mb-25 border-white opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
+          className=" bg-white rounded-full border-4 mt-10 mb-25 border-stone-800 hover:border-dashed opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
           src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
           onClick={handleClick}
         />

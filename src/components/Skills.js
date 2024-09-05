@@ -13,7 +13,7 @@ const Skills = () => {
           className={
             section === "skills"
               ? "px-[3%] text-2xl hover:text-red-500 text-red-500 underline"
-              : "px-[3%] text-2xl hover:text-red-500"
+              : "px-[3%] text-2xl hover:text-pink-600"
           }
           onClick={() => handleOnClick("skills")}
         >
@@ -24,7 +24,7 @@ const Skills = () => {
           className={
             section === "experiance"
               ? "px-[3%] text-2xl hover:text-red-500 text-red-500 underline"
-              : "px-[3%] text-2xl hover:text-red-500"
+              : "px-[3%] text-2xl hover:text-pink-600"
           }
           onClick={() => handleOnClick("experiance")}
         >
@@ -35,7 +35,7 @@ const Skills = () => {
           className={
             section === "education"
               ? "px-[3%] text-2xl hover:text-red-500 text-red-500 underline"
-              : "px-[3%] text-2xl hover:text-red-500"
+              : "px-[3%] text-2xl hover:text-pink-600"
           }
           onClick={() => handleOnClick("education")}
         >
@@ -46,17 +46,17 @@ const Skills = () => {
       <div
         className={`${
           section === "skills"
-            ? "w-[60%] mx-auto left-0 right-0 text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700"
-            : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in-out"
+            ? "w-[60%] mx-auto left-0 right-0 text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
+            : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in"
         }`}
       >
-        <h1 className="font-bold text-xl py-[1%] text-red-500">
+        <h1 className="font-bold text-xl py-[1%] text-pink-700">
           Programming Languages
         </h1>
         <br></br>
         <p>JavaScript, Java, TypeScript, SQL, NodeJs, C++, HTML</p>
         <br></br>
-        <h1 className="font-bold text-xl py-[1%] text-red-500">
+        <h1 className="font-bold text-xl py-[1%] text-pink-700">
           Frameworks/libraries{" "}
         </h1>
         <br></br>
@@ -65,7 +65,7 @@ const Skills = () => {
           REST API
         </p>{" "}
         <br></br>
-        <h1 className="font-bold text-xl py-[1%] text-red-500">Other</h1>
+        <h1 className="font-bold text-xl py-[1%] text-pink-700">Other</h1>
         <br></br>
         <p>
           Git, GitHub, Operating System, Data Structures & Algorithms,
@@ -82,7 +82,7 @@ const Skills = () => {
         }`}
       >
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-red-500">Namaste React 🚀 </p>
+          <p className=" text-xl text-pink-700">Namaste React 🚀 </p>
           <p> Jun 2024 - Sep 2024</p>
         </h1>
         <br></br>
@@ -94,7 +94,7 @@ const Skills = () => {
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-red-500">Codesoft Internship </p>
+          <p className=" text-xl text-pink-700">Codesoft Internship </p>
           <p> Jan 2024 - Feb 2024</p>
         </h1>
         <br></br>
@@ -106,7 +106,7 @@ const Skills = () => {
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-red-500">
+          <p className=" text-xl text-pink-700">
             Java Full stack Development Training at JBK institute Pune{" "}
           </p>
           <p> Mar 2022 - Sep 2022</p>
@@ -128,7 +128,7 @@ const Skills = () => {
         }`}
       >
         <h1 className=" flex  justify-between">
-          <p className="font-bold text-xl text-red-500">Graduation</p>
+          <p className="font-bold text-xl text-pink-700">Graduation</p>
           <p className="font-bold">Graduation year - Apr 2025</p>
         </h1>
         <br></br>
