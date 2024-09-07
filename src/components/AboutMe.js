@@ -8,7 +8,7 @@ const AboutMe = () => {
   };
   return (
     <div
-      className="flex pl-[9%] pt-[6%] justify-between  mb-[3%] text-white"
+      className="flex pl-[9%] pt-[6%] justify-between  mb-[2%] text-white"
       id="about"
     >
       <div

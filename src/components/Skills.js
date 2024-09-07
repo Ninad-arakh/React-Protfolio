@@ -7,7 +7,7 @@ const Skills = () => {
     setSection(value);
   };
   return (
-    <div className="text-white justify-center text-center pt-[2%]">
+    <div className="text-white justify-center text-center  mb-[5%]">
       <div className="justify-around">
         <button
           className={
@@ -42,12 +42,11 @@ const Skills = () => {
           Education
         </button>
       </div>
-
       <div
         className={`${
           section === "skills"
             ? "w-[70%] mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
-            : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in"
+            : "w-[0%] h-0  opacity-0 overflow-hidden border border-white  ease-in"
         }`}
       >
         <h1 className="font-bold text-xl py-[1%] text-pink-700">
@@ -77,8 +76,8 @@ const Skills = () => {
       <div
         className={`${
           section === "experiance"
-            ? "w-[70%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700"
-            : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%]  ease-in-out"
+            ? "w-[70%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700 mt-[4%]"
+            : "w-[0%] h-0 opacity-0 overflow-hidden mt-[4%]  ease-in-out"
         }`}
       >
         <h1 className="font-bold flex justify-between py-[2%]">
@@ -124,8 +123,8 @@ const Skills = () => {
       <div
         className={`${
           section === "education"
-            ? "w-[70%] mx-auto left-0 right-0  opacity-100 -mt-[4%] text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700"
-            : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in-out"
+            ? "w-[70%] mx-auto  opacity-100  text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700"
+            : "w-[0%] h-0 overflow-hidden opacity-0  ease-in-out"
         }`}
       >
         <h1 className=" flex  justify-between">

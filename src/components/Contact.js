@@ -45,9 +45,9 @@ const Contact = () => {
           </h1>
           <br></br>
           <div className="flex my-[2%]">
-            <FaLinkedin className="hover:text-pink-600 hover:-translate-y-1 mr-8 text-[30px]" />
-            <FaGithub className="hover:text-pink-600 hover:-translate-y-1 mr-8 text-[30px]" />
-            <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 mr-8 text-[30px]" />
+            <FaLinkedin className="hover:text-sky-700 hover:-translate-y-1 duration-200 mr-8 text-[30px]" />
+            <FaGithub className="hover:text-neutral-600 hover:-translate-y-1 duration-200 mr-8 text-[30px]" />
+            <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 duration-200 mr-8 text-[30px]" />
           </div>
           <button className=" px-8 py-3 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">
             Download CV
