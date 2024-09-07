@@ -8,7 +8,7 @@ const LoginPage = () => {
   useProject();
 
   const handleClick = () => {
-    navigate("/singleProject?id=" + 3);
+    navigate("/singleProject?name=" + "LoginVista");
   };
   return (
     <div
@@ -18,13 +18,13 @@ const LoginPage = () => {
         <img alt="img" src={loginPage} />
       </div>
 
-      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[100%] duration-200 ">
+      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[110%] duration-200 ">
         <p className="text- bg-black bg-opacity-50  px-[20%] mb-5">
           LoginVista is an elegantly designed login page built using just HTML,
           CSS, and JavaScript. This minimalist yet visually interface focuses on
           providing a seamless and stylish user authentication experience.
           <img
-            className=" bg-white rounded-full border-4 mt-10 mb-25 border-stone-800 hover:border-dashed  opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
+            className=" bg-white rounded-full border-2 mt-10 mb-25 border-stone-800 hover:border-purple-400  opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
             src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
             onClick={handleClick}
           />

@@ -9,7 +9,7 @@ const Netflix = () => {
     useProject();
     
   const handleClick = () => {
-    navigate("/singleProject?id=" + 2);
+    navigate("/singleProject?name=" + "ReactFlix");
   }
   return (
     <div
@@ -19,14 +19,14 @@ const Netflix = () => {
         <img alt="img" src={netflix} />
       </div>
 
-      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[100%] duration-200">
+      <div className="bg-gradient-to-t from-pink-600 group-hover:-translate-y-[115%] duration-200">
         <p className="text-sm bg-black bg-opacity-50  px-[20%] mb-5">
           ReactFlix is a high-performance video streaming platform designed with
           React.js and Redux for a smooth, interactive user experience. It
           offers rapid content loading to keep you engaged without unnecessary
           delays.
         <img
-          className=" bg-white rounded-full border-4 mt-10 mb-25 border-stone-800 hover:border-dashed opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
+          className=" bg-white rounded-full border-2 mt-10 mb-25 border-stone-800 hover:border-purple-400 opacity-0 group-hover:opacity-80 h-12  w-12  mx-[10vh]  justify-center"
           src="https://brandeps.com/icon-download/L/Link-icon-vector-01.svg"
           onClick={handleClick}
         />

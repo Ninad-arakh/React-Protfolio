@@ -32,7 +32,7 @@ function App() {
   return (
     <Provider store={Store}>
       <div className="App ">
-        <Header />
+        {/* <Header /> */}
         <RouterProvider router={router} />
       </div>
     </Provider>

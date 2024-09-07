@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-neutral-950">        
+    <div className="bg-">        
       <Outlet />
     </div>
   );

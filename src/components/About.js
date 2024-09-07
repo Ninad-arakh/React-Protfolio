@@ -8,7 +8,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex pl-[9%] pt-[6%] justify-between  text-white">
+    <div className="flex pl-[9%] pt-[6%] justify-between  text-white" id="about">
       <div
         className={`${
           !expand
