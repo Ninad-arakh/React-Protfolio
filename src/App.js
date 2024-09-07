@@ -6,6 +6,7 @@ import ProjectsPage from "./components/ProjectsPage";
 import { Provider } from "react-redux";
 import Store from "./Utils/Store";
 import SingleProject from "./components/SingleProject";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ function App() {
       <div className="App ">
         {/* <Header /> */}
         <RouterProvider router={router} />
+        <Footer />
       </div>
     </Provider>
   );

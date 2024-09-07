@@ -46,7 +46,7 @@ const Skills = () => {
       <div
         className={`${
           section === "skills"
-            ? "w-[70%] mx-auto left-0 right-0 text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
+            ? "w-[70%] mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
             : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in"
         }`}
       >
@@ -77,7 +77,7 @@ const Skills = () => {
       <div
         className={`${
           section === "experiance"
-            ? "w-[70%] mx-auto left-0 right-0  opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700"
+            ? "w-[70%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700"
             : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%]  ease-in-out"
         }`}
       >
@@ -87,10 +87,10 @@ const Skills = () => {
         </h1>
         <br></br>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-          laborum, porro deleniti corporis ea exercitationem amet molestias
-          quaerat cum sunt quibusdam debitis repellat doloribus quas ipsum fuga
-          dolorem ducimus sit.
+          In this series on ReactJS, I delved into key concepts such as
+          bundlers, why React is fast, components, hooks, custom hooks, state
+          management, and Redux store. I also learned how to improve web
+          application loading and much more.
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
@@ -99,10 +99,11 @@ const Skills = () => {
         </h1>
         <br></br>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-          laborum, porro deleniti corporis ea exercitationem amet molestias
-          quaerat cum sunt quibusdam debitis repellat doloribus quas ipsum fuga
-          dolorem ducimus sit.
+          This internship focuses on gaining experience and earning a
+          certificate through completing a series of practical projects. Interns
+          work on real-world tasks at their own pace, receiving mentorship and
+          feedback throughout. Successful completion of all projects results in
+          certification, validating the skills acquired.
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
@@ -113,10 +114,10 @@ const Skills = () => {
         </h1>
         <br></br>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-          laborum, porro deleniti corporis ea exercitationem amet molestias
-          quaerat cum sunt quibusdam debitis repellat doloribus quas ipsum fuga
-          dolorem ducimus sit.
+          This is where I began learning to code, specifically with Java. Before
+          this, I knew nothing about programming. Here, I learned the basics of
+          coding, how Java code executes, and about concepts like classes,
+          functions, methods, and interfaces.
         </p>
       </div>
 

@@ -9,7 +9,7 @@ import Contact from "./Contact";
 
 const Body = () => {
   return (
-    <div className="">
+    <div className="scrollbar-thin scrollbar-track-purple-700">
       <img
         alt="bg-img"
         src={bgNight}
