@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Skills = () => {
-  const [section, setSection] = useState("");
+  const [section, setSection] = useState("skills");
 
   const handleOnClick = (value) => {
     setSection(value);
@@ -46,7 +46,7 @@ const Skills = () => {
       <div
         className={`${
           section === "skills"
-            ? "w-[60%] mx-auto left-0 right-0 text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
+            ? "w-[70%] mx-auto left-0 right-0 text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
             : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in"
         }`}
       >
@@ -77,7 +77,7 @@ const Skills = () => {
       <div
         className={`${
           section === "experiance"
-            ? "w-[60%] mx-auto left-0 right-0  opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700"
+            ? "w-[70%] mx-auto left-0 right-0  opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700"
             : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%]  ease-in-out"
         }`}
       >
@@ -123,7 +123,7 @@ const Skills = () => {
       <div
         className={`${
           section === "education"
-            ? "w-[60%] mx-auto left-0 right-0  opacity-100 -mt-[4%] text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700"
+            ? "w-[70%] mx-auto left-0 right-0  opacity-100 -mt-[4%] text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700"
             : "w-0 h-0 opacity-0 border border-white rounded-xl p-[2%] ease-in-out"
         }`}
       >

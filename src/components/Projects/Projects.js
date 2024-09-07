@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="text-white w-[90%] mx-auto left-0 right-0 rounded-xl">
-      <h2 className="px-[3%] pb-[2%] text-2xl text-pink-600">Recent Projects :</h2>
+      <h2 className="px-[3%] pb-[2%] text-[35px] ">Recent Projects :</h2>
       <div className="flex ">
         <Youtube />
         <Netflix />
