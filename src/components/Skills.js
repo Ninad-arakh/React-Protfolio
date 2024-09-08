@@ -7,7 +7,7 @@ const Skills = () => {
     setSection(value);
   };
   return (
-    <div className="text-white justify-center text-center  mb-[5%]">
+    <div className="text-white justify-center text-center mt-[5%] mb-[5%]">
       <div className="justify-around">
         <button
           className={
