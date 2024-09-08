@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.icons {
+    @apply mt-1 text-[30px] self-center  group-hover:-translate-y-1 duration-200;
+}
+
+.texts {
+    @apply opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 duration-200 text-left;
+}

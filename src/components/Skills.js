@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addToButton } from "../Utils/ButtonSlice";
+import SkillsSection from "./SkillsSection";
 
 const Skills = () => {
-  const [section, setSection] = useState("skills");
+  // const [section, setSection] = useState("skills");
+  const dispatch = useDispatch()
+
+  const section = useSelector((store) => store.button)
 
   const handleOnClick = (value) => {
-    setSection(value);
+    dispatch(addToButton(value));
+    // setSection(value);
   };
   return (
     <div className="text-white justify-center text-center mt-[5%] mb-[5%]">
+      {/* buttons */}
       <div className="justify-around">
         <button
           className={
@@ -42,37 +50,13 @@ const Skills = () => {
           Education
         </button>
       </div>
-      <div
-        className={`${
-          section === "skills"
-            ? "w-[70%] mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
-            : "w-[0%] h-0  opacity-0 overflow-hidden border border-white  ease-in"
-        }`}
-      >
-        <h1 className="font-bold text-xl py-[1%] text-pink-700">
-          Programming Languages
-        </h1>
-        <br></br>
-        <p>JavaScript, Java, TypeScript, SQL, NodeJs, C++, HTML</p>
-        <br></br>
-        <h1 className="font-bold text-xl py-[1%] text-pink-700">
-          Frameworks/libraries{" "}
-        </h1>
-        <br></br>
-        <p>
-          ReactJs, Angular, ReduxJs, TailwindCss, CSS, BootStrap, Spring Boot,
-          REST API
-        </p>{" "}
-        <br></br>
-        <h1 className="font-bold text-xl py-[1%] text-pink-700">Other</h1>
-        <br></br>
-        <p>
-          Git, GitHub, Operating System, Data Structures & Algorithms,
-          Communication, Web Development
-        </p>
-        <br></br>
+
+      {/* skills */}
+      <div>
+        <SkillsSection />
       </div>
 
+      {/* experiance */}
       <div
         className={`${
           section === "experiance"
@@ -120,6 +104,7 @@ const Skills = () => {
         </p>
       </div>
 
+      {/* education */}
       <div
         className={`${
           section === "education"
