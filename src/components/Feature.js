@@ -2,7 +2,7 @@ import React from "react";
 import { GiSevenPointedStar } from "react-icons/gi";
 
 const Feature = ({ feature }) => {
-  console.log(feature);
+  
   return (
     <div className="mt-[3%] flex">
       <h2 className="flex text-pink-600">

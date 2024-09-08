@@ -6,13 +6,13 @@ const Header = () => {
   const navigate = useNavigate();
 
   const scrollToElement = (elementId) => {
-    document.getElementById(elementId).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
   };
   const handleOnClick = (value) => {
-      navigate("/");
+    navigate("/");
   };
   return (
-    <div className="bg- w-full flex justify-between fixed bg-opacity-60 backdrop-blur-sm ">
+    <div className=" w-full flex justify-between fixed bg-opacity-60 backdrop-blur-sm ">
       <div className="w-[8%] pt-[1%] ml-[10%] self-center">
         <img alt="logo" src={logo} className="  " />
       </div>
