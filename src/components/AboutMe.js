@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-const AboutMe = () => {
+const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
 
   const expandToggleHandler = () => {
     setExpand(!expand);
   };
   return (
-    <div
+    <div ref={ref}
       className="flex pl-[9%] pt-[6%] justify-between  mb-[2%] text-white"
       id="about"
     >
@@ -63,6 +63,6 @@ const AboutMe = () => {
       </div>
     </div>
   );
-};
+});
 
 export default AboutMe;

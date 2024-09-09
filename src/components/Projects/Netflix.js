@@ -9,6 +9,7 @@ const Netflix = () => {
     useProject();
     
   const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     navigate("/singleProject?name=" + "ReactFlix");
   }
   return (

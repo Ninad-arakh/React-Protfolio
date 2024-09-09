@@ -4,9 +4,9 @@ import Netflix from "./Netflix";
 import LoginPage from "./LoginPage";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const Projects = React.forwardRef((props, ref) => {
   return (
-    <div className="text-white w-[90%] mx-auto left-0 right-0 rounded-xl">
+    <div ref={ref} className="text-white w-[90%] mx-auto left-0 right-0 rounded-xl">
       <h2 className="px-[3%] pb-[2%] text-[35px] ">Recent Projects :</h2>
       <div className="flex ">
         <Youtube />
@@ -22,6 +22,6 @@ const Projects = () => {
       </Link>
     </div>
   );
-};
+});
 
 export default Projects;

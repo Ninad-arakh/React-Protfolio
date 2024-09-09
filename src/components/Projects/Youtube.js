@@ -4,15 +4,14 @@ import useProject from "../../Hook/useProject";
 import { useNavigate } from "react-router-dom";
 
 const Youtube = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useProject();
 
   const handleClick = () => {
-    navigate(`/singleProject?name=ReactTube`)
-
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`/singleProject?name=ReactTube`);
+  };
   return (
     <div
       className={`w-[32%] h-[48vh] py-2 border mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500`}

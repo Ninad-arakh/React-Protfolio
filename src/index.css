@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@layer utilities {
+    .animation-delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animation-delay-400 {
+      animation-delay: 0.4s;
+    }
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .icons {
     @apply mt-1 text-[30px] self-center  group-hover:-translate-y-1 duration-200;
 }

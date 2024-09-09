@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProjectDet = ({ details }) => {
     const navigate = useNavigate()
   const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     navigate("/singleProject?name="+details.name);
   };
   return (
