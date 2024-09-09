@@ -14,7 +14,7 @@ const SkillsSection = () => {
     <div
       className={`${
         section === "skills"
-          ? "w-[70%] mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
+          ? "sm:w-[70%] w-[90%]  mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
           : "w-[0%] h-0  opacity-0 overflow-hidden border border-white  ease-in"
       }`}
     >
@@ -22,38 +22,38 @@ const SkillsSection = () => {
         Programming Languages
       </h1>
       <br></br>
-      <p className="flex  justify-evenly ">
-        <span className="mx-[0%] group">
+      <p className="flex  justify-evenly -pb-10 -mb-5 sm:mb-0">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <RiJavascriptFill className="icons group-hover:text-yellow-300  " />{" "}
           <span className="texts">javascript</span>
         </span>
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <FaJava className="icons group-hover:text-red-600" />
           <span className="texts">java</span>
         </span>
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <BiLogoTypescript className="icons group-hover:text-blue-500" />
           <span className="texts">typescript</span>
         </span>
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <FaDatabase className="icons group-hover:text-teal-500" />
           <span className="texts">SQL</span>
         </span>
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <FaNodeJs className="icons group-hover:text-green-500" />
           <span className="texts">NodeJs</span>
         </span>
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <SiCplusplus className="icons group-hover:text-blue-500" />
           <span className="texts">C++</span>
         </span>{" "}
-        <span className="mx-[3%] group">
+        <span className="sm:mx-[3%] group w-[6%] text-center">
           <FaHtml5 className="icons group-hover:text-orange-600" />
           <span className="texts">HTML</span>
         </span>
       </p>
       <br></br>
-      <h1 className="font-bold text-xl py-[1%] text-pink-700">
+      <h1 className="font-bold text-xl pb-[1%] text-pink-700">
         Frameworks/libraries{" "}
       </h1>
       <br></br>

@@ -31,7 +31,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <Provider store={Store}>
-      <div className="App ">
+      <div className="App w-[100%]">
         <RouterProvider router={router} />
         <Footer />
       </div>

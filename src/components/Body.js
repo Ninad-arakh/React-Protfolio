@@ -17,7 +17,6 @@ const Body = () => {
 
   const preloader = useSelector((store) => store.preload)
   const dispatch = useDispatch()
-  console.log("preloader is " , preloader)
 
   useEffect(() => {
     setTimeout(() =>{
@@ -43,19 +42,18 @@ const Body = () => {
 
   if(preloader){
     return(
-      <div className="bg-black">
-      {preloader && <Preloader />}
-      
+      <div className="bg-black w-full h-full">
+      {preloader && <Preloader />}   
       </div>
     )
   }
   else{
     return (
-      <div className="scrollbar-thin scrollbar-track-purple-700">
+      <div >
         <img
           alt="bg-img"
           src={bgNight}
-          className="-z-10 w-screen h-screen bg- fixed"
+          className="-z-10 w-[100%] h-full  fixed"
         />
         <Header
           scrollToAbout={scrollToAbout}

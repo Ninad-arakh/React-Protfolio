@@ -14,7 +14,7 @@ const Skills = () => {
     // setSection(value);
   };
   return (
-    <div className="text-white justify-center text-center mt-[5%] mb-[5%]">
+    <div className="text-white justify-center text-center mt-[5%] mx-auto mb-[5%] w-[90%]  ">
       {/* buttons */}
       <div className="justify-around">
         <button
@@ -60,12 +60,12 @@ const Skills = () => {
       <div
         className={`${
           section === "experiance"
-            ? "w-[70%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700 mt-[4%]"
+            ? "sm:w-[70%] w-[90%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700 mt-[4%]"
             : "w-[0%] h-0 opacity-0 overflow-hidden mt-[4%]  ease-in-out"
         }`}
       >
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-pink-700">Namaste React 🚀 </p>
+          <p className=" sm:text-xl text-pink-700">Namaste React 🚀 </p>
           <p> Jun 2024 - Sep 2024</p>
         </h1>
         <br></br>
@@ -77,7 +77,7 @@ const Skills = () => {
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-pink-700">Codesoft Internship </p>
+          <p className=" sm:text-xl text-pink-700">Codesoft Internship </p>
           <p> Jan 2024 - Feb 2024</p>
         </h1>
         <br></br>
@@ -90,7 +90,7 @@ const Skills = () => {
         </p>
         <br></br>
         <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" text-xl text-pink-700">
+          <p className=" sm:text-xl text-pink-700">
             Java Full stack Development Training at JBK institute Pune{" "}
           </p>
           <p> Mar 2022 - Sep 2022</p>
@@ -108,13 +108,13 @@ const Skills = () => {
       <div
         className={`${
           section === "education"
-            ? "w-[70%] mx-auto  opacity-100  text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700"
+            ? "sm:w-[70%] w-[90%] mx-auto  opacity-100  text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700 pb-4"
             : "w-[0%] h-0 overflow-hidden opacity-0  ease-in-out"
         }`}
       >
         <h1 className=" flex  justify-between">
-          <p className="font-bold text-xl text-pink-700">Graduation</p>
-          <p className="font-bold">Graduation year - Apr 2025</p>
+          <p className="font-bold sm:text-xl text-pink-700">Graduation</p>
+          <p className="sm:font-bold">Graduation year - Apr 2025</p>
         </h1>
         <br></br>
         <h1 className="font-bold">

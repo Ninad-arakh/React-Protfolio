@@ -8,14 +8,14 @@ const AboutMe = React.forwardRef((props, ref) => {
   };
   return (
     <div ref={ref}
-      className="flex pl-[9%] pt-[6%] justify-between  mb-[2%] text-white"
+      className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between  mb-[2%] text-white"
       id="about"
     >
       <div
         className={`${
           !expand
-            ? "w-[65%]  rounded-xl px-[1%] pt-[1%] h-96"
-            : "w-[65%]  rounded-xl px-[1%] py-[1%] "
+            ? "sm:w-[65%]  rounded-xl px-[1%] pt-[1%] h-96"
+            : "sm:w-[65%]  rounded-xl px-[1%] py-[1%] "
         }`}
       >
         <div className={`${!expand ? "h-[60%] overflow-hidden" : ""}`}>
@@ -52,7 +52,7 @@ const AboutMe = React.forwardRef((props, ref) => {
       </div>
       <div
         className={`${
-          !expand ? "w-[25%] mr-[7%] py-[2%] " : "w-[25%] py-[6%] mr-[7%]"
+          !expand ? "sm:w-[25%] w-0 mr-[7%] py-[2%] " : "sm:w-[25%] w-0 py-[6%] mr-[7%]"
         }`}
       >
         <img
