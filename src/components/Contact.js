@@ -49,26 +49,26 @@ const Contact = React.forwardRef((props, ref) => {
   // });
 
   return (
-    <div ref={ref} className="flex  mt-[5%] h-96 mx-[3%]">
+    <div ref={ref} className="sm:flex  mt-[5%] sm:h-96 mx-[3%]">
       <div className="text-white px-[5%] pt-[2%] ">
         <h1 className="text-[35px] ">Contact Me</h1>
         <br></br>
-        <div>
-          <h1 className="flex  ">
+        <div className=" pl-[15%] py-[2%]  sm:py-0 sm:pl-0">
+          <h1 className="flex text-xl sm:text-lg ">
             <span>
               <IoMail className="mt-1 text-[30px] font-thin mr-4 text-pink-600" />
             </span>
             arakhninad@gmail.com
           </h1>
           <br></br>
-          <h1 className="flex  ">
+          <h1 className="flex text-xl sm:text-lg ">
             <span>
               <BiSolidPhoneCall className="mt-1 text-[30px] font-thin mr-4 text-pink-600" />
             </span>
             +91 0000000000
           </h1>
           <br></br>
-          <div className="flex my-[2%]">
+          <div className="flex my-[2%] -ml-[16%] sm:ml-0 justify-evenly ">
             <a href="https://linkedin.com/in/ninad-arakh-277747237">
               <FaLinkedin className="hover:text-sky-700 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
@@ -79,12 +79,12 @@ const Contact = React.forwardRef((props, ref) => {
               <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
           </div>
-          <button className=" px-8 py-3 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">
+          <button className=" px-8 py-3 ml-10 sm:ml-0 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">
             Download CV
           </button>
         </div>
       </div>
-      <div className=" ml-4 w-full px-4 justify-center ">
+      <div className=" sm:ml-4 w-full px-4 justify-center ">
         <form
           className=" flex flex-col justify-center text-white"
           ref={formRef}
@@ -112,7 +112,7 @@ const Contact = React.forwardRef((props, ref) => {
             rows="6"
           />
           <button
-            className="w-[18%] mx-auto mb-4 px-8 py-3  rounded-lg bg-red-500 hover:bg-pink-600 text-white justify-center"
+            className="sm:w-[18%] w-[30%] mx-auto mb-4 px-8 py-3  rounded-lg bg-red-500 hover:bg-pink-600 text-white justify-center"
             type="submit"
           >
             Submit

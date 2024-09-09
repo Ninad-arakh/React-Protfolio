@@ -9,7 +9,7 @@ const ProjectDet = ({ details }) => {
   };
   return (
     <div
-      className="relative group/bg  pt-2 w-[30%] h-[19rem] mx-[1%] my-[1%] cursor-pointer"
+      className="relative group/bg  pt-2 sm:w-[30%] h-[19rem] mx-[1%] my-[1%] cursor-pointer "
       onClick={handleClick}
     >
       <div className="absolute blur bg-gradient-to-r from-pink-600 to-purple-600 opacity-25 inset-0  rounded-xl  group-hover/bg:opacity-40 duration-[1000ms] group-hover/bg:duration-200 p-2"></div>

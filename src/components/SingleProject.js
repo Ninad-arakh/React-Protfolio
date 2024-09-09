@@ -19,15 +19,15 @@ const SingleProject = () => {
     <div className="">
       <Header />
       <div className="h-full w-screen text-white  pt-[8%] px-[10%]">
-        <img className="fixed -z-10 w-screen -mt-[10%] -mx-[10%]" src={bgNight}/>
-        <div className="flex justify-between">
-          <h1 className="font-med text-3xl">{data[0]?.name}</h1>
+        <img className="fixed -z-10 w-screen h-screen -mt-[8%] sm:-mt-[8%] -mx-[10%]" src={bgNight}/>
+        <div className="flex justify-between sm:mt-0 mt-[15%] ">
+          <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%]">{data[0]?.name}</h1>
           <div className="flex">
             <button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Live</button>
             <button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Github</button>
           </div>
         </div>
-        <h1 className="pt-[5%]">{data[0]?.description}</h1>
+        <h1 className="pt-[5%] sm:ml-0 -ml-[7%] ">{data[0]?.description}</h1>
         <div>
           {data[0]?.features.map((feature, i) => (
             <Feature key={i} feature={feature} />
