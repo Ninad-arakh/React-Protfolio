@@ -21,7 +21,7 @@ const Body = () => {
   useEffect(() => {
     setTimeout(() =>{
       dispatch(changeState(false))
-    }, 2000);
+    }, 1000);
   } , [])
 
   const scrollToAbout = () => {
@@ -53,7 +53,7 @@ const Body = () => {
         <img
           alt="bg-img"
           src={bgNight}
-          className="-z-10 w-[100%] h-full  fixed"
+          className="-z-10 w-[110%] h-full  fixed"
         />
         <Header
           scrollToAbout={scrollToAbout}

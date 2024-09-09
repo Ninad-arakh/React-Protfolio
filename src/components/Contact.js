@@ -69,13 +69,13 @@ const Contact = React.forwardRef((props, ref) => {
           </h1>
           <br></br>
           <div className="flex my-[2%] -ml-[16%] sm:ml-0 justify-evenly ">
-            <a href="https://linkedin.com/in/ninad-arakh-277747237">
+            <a href="https://linkedin.com/in/ninad-arakh-277747237" target="_blank">
               <FaLinkedin className="hover:text-sky-700 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
-            <a href="https://github.com/Ninad-arakh">
+            <a href="https://github.com/Ninad-arakh" target="_blank">
               <FaGithub className="hover:text-slate-100  hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
-            <a href="https://www.instagram.com/ninad_arakh.exe/">
+            <a href="https://www.instagram.com/ninad_arakh.exe/" target="_blank">
               <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
           </div>

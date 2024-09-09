@@ -23,8 +23,8 @@ const SingleProject = () => {
         <div className="flex justify-between sm:mt-0 mt-[15%] ">
           <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%]">{data[0]?.name}</h1>
           <div className="flex">
-            <button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Live</button>
-            <button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Github</button>
+            <a href={data[0].liveLink} target="_blank"><button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Live</button></a>
+            <a href={data[0]?.github} target="_blank" ><button className="m-2 border-pink-500 border px-4 rounded-xl hover:bg-pink-600">Github</button></a>
           </div>
         </div>
         <h1 className="pt-[5%] sm:ml-0 -ml-[7%] ">{data[0]?.description}</h1>
