@@ -14,7 +14,7 @@ const Preloader = () => {
       const particle = document.createElement("div");
       particle.className = "particle absolute rounded-full opacity-75";
 
-      const size = Math.random() * 5 + 9; // Random size between 2px and 7px
+      const size = Math.random() * 5 + 3; // Random size between 2px and 7px
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`; // Make it a circle
 
