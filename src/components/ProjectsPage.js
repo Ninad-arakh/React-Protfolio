@@ -17,7 +17,7 @@ const ProjectsPage = () => {
       <img
         alt="bg-img"
         src={bgNight}
-        className="h-full w-screen bg-cover fixed -z-10"
+        className="h-full w-screen object-cover bg-cover fixed -z-10"
       />
       <Header />
       <div className="text-white sm:flex justify-center flex-wrap pt-[15%] sm:pt-[8%] mx-[5%]">

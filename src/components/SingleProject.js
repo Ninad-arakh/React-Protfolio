@@ -24,7 +24,7 @@ const SingleProject = () => {
       <Header />
       <div className="h-full w-screen text-white  pt-[8%] px-[10%]">
         <img
-          className="fixed -z-10 w-screen h-screen -mt-[8%] sm:-mt-[8%] -mx-[10%]"
+          className="fixed -z-10 w-screen bg-cover h-screen -mt-[8%] sm:-mt-[8%] -mx-[10%]"
           src={bgNight}
         />
         <div className="flex justify-between sm:mt-0 mt-[15%] ">

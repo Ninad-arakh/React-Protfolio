@@ -53,7 +53,7 @@ const Body = () => {
         <img
           alt="bg-img"
           src={bgNight}
-          className="-z-10 w-[110%] h-full object-cover fixed"
+          className="-z-10 w-[110%] bg-cover h-full object-cover fixed"
         />
         <Header
           scrollToAbout={scrollToAbout}
