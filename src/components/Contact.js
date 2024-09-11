@@ -4,6 +4,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import ninad from "../Assets/NINAD_ARAKH.pdf"
 
 const Contact = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState("");
@@ -35,18 +36,7 @@ const Contact = React.forwardRef((props, ref) => {
     }
   };
 
-  // form.addEventListener("submit", (e) => {
-  //   e.preventDefault();
-  //   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-  //     .then((response) => {
-  //       msg.innerHTML = "Message sent successfuly!";
-  //       setTimeout(function () {
-  //         msg.innerHTML = "";
-  //       }, 5000);
-  //       form.reset();
-  //     })
-  //     .catch((error) => console.error("Error!", error.message));
-  // });
+
 
   return (
     <div ref={ref} className="sm:flex  mt-[5%] sm:h-96 mx-[3%]">
@@ -79,9 +69,9 @@ const Contact = React.forwardRef((props, ref) => {
               <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
             </a>
           </div>
-          <button className=" px-8 py-3 ml-10 sm:ml-0 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">
+          <a href={ninad} target="_blank" ><button className=" px-8 py-3 ml-10 sm:ml-0 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">
             Download CV
-          </button>
+          </button></a>
         </div>
       </div>
       <div className=" sm:ml-4 w-full px-4 justify-center ">

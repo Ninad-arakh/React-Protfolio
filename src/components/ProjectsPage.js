@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import { useSelector } from "react-redux";
 import bgNight from "../Assets/bg-night.jpg";
@@ -6,9 +6,14 @@ import ProjectDet from "./ProjectDet";
 
 const ProjectsPage = () => {
   const proj = useSelector((store) => store.projects);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   if (proj === null) return null;
+
   return (
-    <div >
+    <div>
       <img
         alt="bg-img"
         src={bgNight}

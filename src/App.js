@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import Store from "./Utils/Store";
 import SingleProject from "./components/SingleProject";
 import Footer from "./components/Footer";
+import YtVideoDemo from "./components/YtVideoDemo";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     path: "projects",
     element: <ProjectsPage />,
   },
+  {
+    path: "demoVideo",
+    element: <YtVideoDemo />
+  }
 ]);
 
 function App() {

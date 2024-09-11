@@ -39,10 +39,7 @@ const SkillsSection = () => {
           <FaDatabase className="icons group-hover:text-teal-500" />
           <span className="texts">SQL</span>
         </span>
-        <span className="sm:mx-[3%] group w-[6%] text-center">
-          <FaNodeJs className="icons group-hover:text-green-500" />
-          <span className="texts">NodeJs</span>
-        </span>
+        
         <span className="sm:mx-[3%] group w-[6%] text-center">
           <SiCplusplus className="icons group-hover:text-blue-500" />
           <span className="texts">C++</span>
@@ -58,7 +55,7 @@ const SkillsSection = () => {
       </h1>
       <br></br>
       <p className="flex ">
-        ReactJs, Angular, ReduxJs, TailwindCss, CSS, BootStrap, Spring Boot,
+        ReactJs, NodeJs, Angular, ReduxJs, TailwindCss, CSS, BootStrap, Spring Boot,
         REST API
       </p>{" "}
       <br></br>
