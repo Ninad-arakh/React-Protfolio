@@ -57,6 +57,7 @@ const Skills = () => {
       </div>
 
       {/* experiance */}
+      
       <div
         className={`${
           section === "experiance"
@@ -64,6 +65,17 @@ const Skills = () => {
             : "w-[0%] h-0 opacity-0 overflow-hidden mt-[4%]  ease-in-out"
         }`}
       >
+        
+        <h1 className="font-bold flex justify-between py-[2%]">
+          <p className=" sm:text-xl text-pink-700">Namaste NodeJs 🚀 </p>
+          <p> Nov 2024 - Mar 2025</p>
+        </h1>
+        <br></br>
+        <p>
+        In the Namaste Node.js series, I dove deep into the fundamentals and advanced concepts of Node.js, enhancing my skills in backend development and server-side programming. Throughout this learning journey, I worked on multiple projects and gained hands-on experience that solidified my understanding of JavaScript runtime environments and server-side applications.
+        </p>
+        <br></br>
+
         <h1 className="font-bold flex justify-between py-[2%]">
           <p className=" sm:text-xl text-pink-700">Namaste React 🚀 </p>
           <p> Jun 2024 - Sep 2024</p>
@@ -118,7 +130,7 @@ const Skills = () => {
         </h1>
         <br></br>
         <h1 className="font-bold">
-          Bachelor's of Science - Computer Science (GPA: 7.61){" "}
+          Bachelor's of Science - Computer Science (GPA: 8.04){" "}
         </h1>
         <br></br>
         <p>

@@ -55,14 +55,14 @@ const SkillsSection = () => {
       </h1>
       <br></br>
       <p className="flex ">
-        ReactJs, NodeJs, Angular, ReduxJs, TailwindCss, CSS, BootStrap, Spring Boot,
+        ReactJs, NodeJs, ExpressJs, MongoDB, Angular, ReduxJs, TailwindCss, DaisyUI, CSS, BootStrap, Spring Boot,
         REST API
       </p>{" "}
       <br></br>
       <h1 className="font-bold text-xl py-[1%] text-pink-700">Other</h1>
       <br></br>
       <p className="flex">
-        Git,{" "}  GitHub, {" "}  Operating System, {" "}  Data Structures & Algorithms, 
+        Git,{" "}  GitHub, {" "}, AWS {" "}, Microservices {" "}, LLD{" "},  Operating System, {" "}  Data Structures & Algorithms, 
         {" "} Communication,  {" "} Web Development,  {" "} Photoshop.
       </p>
       <br></br>

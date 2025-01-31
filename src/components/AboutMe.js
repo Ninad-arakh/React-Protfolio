@@ -58,7 +58,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         <img
           className="rounded-xl"
           alt="profile"
-          src="https://i.neoseeker.com/u/2018/p/39/dragon-ball-z-profile-picture-7.jpg"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQGXWk5walvmmg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699106746249?e=1743638400&v=beta&t=wQE2HDkEE6v6iiPoAACM1VATWGVoV48q9RADkEs6j7M"
         />
       </div>
     </div>
