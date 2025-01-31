@@ -1,0 +1,16 @@
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fade 2s ease-in-out infinite;
+  }
+  
+  /* Keyframes for fading effect */
+  @keyframes fade {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }

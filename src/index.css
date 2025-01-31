@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .animation-delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animation-delay-400 {
+      animation-delay: 0.4s;
+    }
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.icons {
+    @apply sm:mt-1 sm:text-[30px] text-[25px] self-center  group-hover:-translate-y-1 duration-200;
+}
+
+.texts {
+    @apply opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 duration-200 text-left sm:text-sm text-[10px];
+}
