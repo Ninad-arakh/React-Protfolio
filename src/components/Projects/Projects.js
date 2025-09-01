@@ -1,8 +1,8 @@
 import React from "react";
 import Youtube from "./Youtube";
 import Netflix from "./Netflix";
-import LoginPage from "./LoginPage";
 import { Link } from "react-router-dom";
+import TenFlex from "./TenFlex";
 
 const Projects = React.forwardRef((props, ref) => {
   return (
@@ -12,9 +12,9 @@ const Projects = React.forwardRef((props, ref) => {
     >
       <h2 className="px-[3%] pb-[2%] text-[35px] ">Recent Projects :</h2>
       <div className="sm:flex h-[100vh] sm:h-[50vh]">
-        <Youtube />
+        <TenFlex />
         <Netflix />
-        <LoginPage />
+        <Youtube />
       </div>
       <div className=" w-[40%] h-[5vh] sm:h-[8vh] p-0 sm:w-[15%] mx-auto my-[2%]">
         <Link to={"/projects"}>

@@ -38,7 +38,7 @@ const SingleProject = () => {
             >
               Demo Video
             </button>
-            <a href={data[0].liveLink} target="_blank">
+            <a href={data[0]?.liveLink} target="_blank">
               <button className="m-2 border-pink-500 border px-4 rounded-xl text-xs h-[80%] sm:text-lg hover:bg-pink-600">
                 Live
               </button>

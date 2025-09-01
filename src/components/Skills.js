@@ -5,9 +5,9 @@ import SkillsSection from "./SkillsSection";
 
 const Skills = () => {
   // const [section, setSection] = useState("skills");
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const section = useSelector((store) => store.button)
+  const section = useSelector((store) => store.button);
 
   const handleOnClick = (value) => {
     dispatch(addToButton(value));
@@ -57,7 +57,6 @@ const Skills = () => {
       </div>
 
       {/* experiance */}
-      
       <div
         className={`${
           section === "experiance"
@@ -65,55 +64,106 @@ const Skills = () => {
             : "w-[0%] h-0 opacity-0 overflow-hidden mt-[4%]  ease-in-out"
         }`}
       >
-        
-        <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" sm:text-xl text-pink-700">Namaste NodeJs 🚀 </p>
-          <p> Nov 2024 - Mar 2025</p>
-        </h1>
-        <br></br>
-        <p>
-        In the Namaste Node.js series, I dove deep into the fundamentals and advanced concepts of Node.js, enhancing my skills in backend development and server-side programming. Throughout this learning journey, I worked on multiple projects and gained hands-on experience that solidified my understanding of JavaScript runtime environments and server-side applications.
-        </p>
-        <br></br>
+        <div>
+          <h1 className="font-bold flex justify-between py-[2%]">
+            <p className=" sm:text-xl text-pink-700">
+              Frontend Developer Intern 💻{" "}
+            </p>
+            <p> June 2025 - Aug 2025</p>
+          </h1>
+          <a
+            href="https://www.entrepreneurshipnetwork.net/"
+            target="_blank"
+            className="mb-2 hover:text-pink-300 hover:underline"
+          >
+            The Entrepreneurship Network - Remote
+          </a>
+          <ul>
+            <li>
+              Developed and optimized core frontend pages (Home, Explore,
+              Projects, Profile) using Next.js, TailwindCSS, and Axios,
+              improving responsiveness and usability.
+            </li>
+            <li>
+              Migrated application from React.js to Next.js, enhancing SEO and
+              performance.
+            </li>
+            <li>
+              Implemented features such as project posting, bidding, gig
+              listing, and save-to-giglist modal to improve user experience.
+            </li>
+            <li>
+              Collaborated with a team of 8 frontend and 10+ backend developers,
+              resolving bugs, conducting code reviews, and delivering features
+              within deadlines.
+            </li>
+            <li>
+              Deployed frontend on Vercel and integrated with Django backend
+              (Render) for production-ready release.
+            </li>
+          </ul>
+          <br></br>
+        </div>
 
-        <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" sm:text-xl text-pink-700">Namaste React 🚀 </p>
-          <p> Jun 2024 - Sep 2024</p>
-        </h1>
-        <br></br>
-        <p>
-          In this series on ReactJS, I delved into key concepts such as
-          bundlers, why React is fast, components, hooks, custom hooks, state
-          management, and Redux store. I also learned how to improve web
-          application loading and much more.
-        </p>
-        <br></br>
-        <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" sm:text-xl text-pink-700">Codesoft Internship </p>
-          <p> Jan 2024 - Feb 2024</p>
-        </h1>
-        <br></br>
-        <p>
-          This internship focuses on gaining experience and earning a
-          certificate through completing a series of practical projects. Interns
-          work on real-world tasks at their own pace, receiving mentorship and
-          feedback throughout. Successful completion of all projects results in
-          certification, validating the skills acquired.
-        </p>
-        <br></br>
-        <h1 className="font-bold flex justify-between py-[2%]">
-          <p className=" sm:text-xl text-pink-700">
-            Java Full stack Development Training at JBK institute Pune{" "}
+        <div>
+          <h1 className="font-bold flex justify-between py-[2%]">
+            <p className=" sm:text-xl text-pink-700">Namaste NodeJs certification 🚀 </p>
+            <p> Nov 2024 - Mar 2025</p>
+          </h1>
+          <p>
+            In the Namaste Node.js series, I dove deep into the fundamentals and
+            advanced concepts of Node.js, enhancing my skills in backend
+            development and server-side programming. Throughout this learning
+            journey, I worked on multiple projects and gained hands-on
+            experience that solidified my understanding of JavaScript runtime
+            environments and server-side applications.
           </p>
-          <p> Mar 2022 - Sep 2022</p>
-        </h1>
-        <br></br>
-        <p>
-          This is where I began learning to code, specifically with Java. Before
-          this, I knew nothing about programming. Here, I learned the basics of
-          coding, how Java code executes, and about concepts like classes,
-          functions, methods, and interfaces.
-        </p>
+          <br></br>
+        </div>
+
+        <div>
+          <h1 className="font-bold flex justify-between py-[2%]">
+            <p className=" sm:text-xl text-pink-700">Namaste React certification 🚀 </p>
+            <p> Jun 2024 - Sep 2024</p>
+          </h1>
+          <p>
+            In this series on ReactJS, I delved into key concepts such as
+            bundlers, why React is fast, components, hooks, custom hooks, state
+            management, and Redux store. I also learned how to improve web
+            application loading and much more.
+          </p>
+          <br></br>
+        </div>
+
+        <div>
+          <h1 className="font-bold flex justify-between py-[2%]">
+            <p className=" sm:text-xl text-pink-700">Codesoft Internship 💻</p>
+            <p> Jan 2024 - Feb 2024</p>
+          </h1>
+          <p>
+            This internship focuses on gaining experience and earning a
+            certificate through completing a series of practical projects.
+            Interns work on real-world tasks at their own pace, receiving
+            mentorship and feedback throughout. Successful completion of all
+            projects results in certification, validating the skills acquired.
+          </p>
+          <br></br>
+        </div>
+
+        <div>
+          <h1 className="font-bold flex justify-between py-[2%]">
+            <p className=" sm:text-xl text-pink-700">
+              Java Full stack Development Training at JBK institute Pune certification{" "}
+            </p>
+            <p> Mar 2022 - Sep 2022</p>
+          </h1>
+          <p>
+            This is where I began learning to code, specifically with Java.
+            Before this, I knew nothing about programming. Here, I learned the
+            basics of coding, how Java code executes, and about concepts like
+            classes, functions, methods, and interfaces.
+          </p>
+        </div>
       </div>
 
       {/* education */}
