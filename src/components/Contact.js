@@ -6,6 +6,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import ninad from "../Assets/NINAD_ARAKH.pdf";
 import { run } from "../Utils/sendEmail";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState("");
@@ -19,6 +21,7 @@ const Contact = React.forwardRef((props, ref) => {
     const form = formRef.current;
     try {
       const response = await run(senderName, senderEmail, senderMessage);
+      console.log("Response:", response);
 
       if (response?.$metadata?.httpStatusCode === 200) {
         setMessage("Message sent successfully!");
@@ -26,14 +29,17 @@ const Contact = React.forwardRef((props, ref) => {
         setTimeout(() => setMessage(""), 5000);
       } else {
         throw new Error("Error sending message. Please try again.");
+        toast.error("Failed to send message. Please try again." );
       }
     } catch (error) {
       console.error("Error!", error.message);
+      toast.error("Failed to send message. "+ error.message, );
     }
   };
 
   return (
     <>
+    <ToastContainer position="bottom-right" autoClose={3000} />
       <div ref={ref} className="sm:flex  mt-[5%] sm:h-96 mx-[3%]">
         <div className="text-white px-[5%] pt-[2%] ">
           <h1 className="text-[35px] ">Contact Me</h1>

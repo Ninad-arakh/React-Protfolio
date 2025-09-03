@@ -16,9 +16,9 @@ const SingleProject = () => {
 
   if (projectDetails === null) return null;
 
-  const handleOnClick = () =>{
-    navigate("/demoVideo?jbv="+data[0]?.ytKey)
-  }
+  const handleOnClick = () => {
+    navigate("/demoVideo?jbv=" + data[0]?.ytKey);
+  };
   return (
     <div className="">
       <Header />
@@ -31,21 +31,61 @@ const SingleProject = () => {
           <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%]">
             {data[0]?.name}
           </h1>
-          <div className="flex">
-            <button
-              className="m-2 border-pink-500 border px-4 rounded-xl text-xs h-[80%] sm:text-lg hover:bg-pink-600"
-              onClick={handleOnClick}
-            >
-              Demo Video
-            </button>
-            <a href={data[0]?.liveLink} target="_blank">
-              <button className="m-2 border-pink-500 border px-4 rounded-xl text-xs h-[80%] sm:text-lg hover:bg-pink-600">
-                Live
+          <div className="flex gap-2">
+            {data[0].videoAvailable && (
+              <button
+                href="#_"
+                className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-xl shadow-2xl group"
+                onClick={handleOnClick}
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
+                {/* <!-- Top glass gradient --> */}
+                <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                {/* <!-- Bottom gradient --> */}
+                <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                {/* <!-- Left gradient --> */}
+                <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                {/* <!-- Right gradient --> */}
+                <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                <span className="absolute inset-0 w-full h-full border border-white rounded-xl opacity-10"></span>
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+                <span className="relative">Demo Video</span>
               </button>
-            </a>
+            )}
+
+            {data[0].isLive && (
+              <a href={data[0]?.liveLink} target="_blank">
+                <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-xl shadow-2xl group">
+                  <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
+                  {/* <!-- Top glass gradient --> */}
+                  <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                  {/* <!-- Bottom gradient --> */}
+                  <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                  {/* <!-- Left gradient --> */}
+                  <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                  {/* <!-- Right gradient --> */}
+                  <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                  <span className="absolute inset-0 w-full h-full border border-white rounded-xl opacity-10"></span>
+                  <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+                  <span className="relative">Live</span>
+                </button>
+              </a>
+            )}
+
             <a href={data[0]?.github} target="_blank">
-              <button className="m-2 border-pink-500 border px-4 rounded-xl text-xs h-[80%] sm:text-lg hover:bg-pink-600">
-                Github
+              <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-xl shadow-2xl group">
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
+                {/* <!-- Top glass gradient --> */}
+                <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                {/* <!-- Bottom gradient --> */}
+                <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                {/* <!-- Left gradient --> */}
+                <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                {/* <!-- Right gradient --> */}
+                <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                <span className="absolute inset-0 w-full h-full border border-white rounded-xl opacity-10"></span>
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+                <span className="relative">GitHub</span>
               </button>
             </a>
           </div>
@@ -61,7 +101,7 @@ const SingleProject = () => {
           <img
             alt="project image"
             src={data[0]?.imageLink}
-            className="mx-auto left-0 right-0 rounded-xl border border-white"
+            className="mx-auto left-0 right-0 rounded-xl border border-[#590d5a] shadow-2xl"
           />
         </div>
       </div>
