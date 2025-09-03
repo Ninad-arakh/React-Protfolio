@@ -22,13 +22,13 @@ const SingleProject = () => {
   return (
     <div className="">
       <Header />
-      <div className="h-full w-screen text-white  pt-[8%] px-[10%]">
+      <div className="h-full w-screen text-white  pt-[8%] px-[10%] gap-5 flex flex-col">
         <img
           className="fixed -z-10 w-screen bg-cover h-screen -mt-[8%] sm:-mt-[8%] -mx-[10%]"
           src={bgNight}
         />
-        <div className="flex justify-between sm:mt-0 mt-[15%] ">
-          <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%]">
+        <div className="flex justify-between sm:mt-0 mt-[15%]  ">
+          <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%] font-semibold">
             {data[0]?.name}
           </h1>
           <div className="flex gap-2">
@@ -90,14 +90,16 @@ const SingleProject = () => {
             </a>
           </div>
         </div>
-        <h1 className="pt-[5%] sm:ml-0 -ml-[7%] ">{data[0]?.description}</h1>
-        <div>
+
+        <h1 className=" sm:ml-0  text-lg ">{data[0]?.description}</h1>
+
+        <div className="">
           {data[0]?.features.map((feature, i) => (
             <Feature key={i} feature={feature} />
           ))}
         </div>
-        <p className="py-[5%]">{data[0]?.summary}</p>
-        <div className="w-full h-full  pb-[10%]">
+        <p className="py-[%]">{data[0]?.summary}</p>
+        <div className="w-full h-full my-[3%] ">
           <img
             alt="project image"
             src={data[0]?.imageLink}

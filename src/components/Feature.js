@@ -4,11 +4,11 @@ import { GiSevenPointedStar } from "react-icons/gi";
 const Feature = ({ feature }) => {
   
   return (
-    <div className="mt-[3%] flex">
-      <h2 className="flex text-pink-600">
-        <GiSevenPointedStar className="mt-1 mr-2" /> {feature?.name} <span className="mx-2">{'=>'}</span>
+    <div className=" flex mt-2">
+      <h2 className="flex text-pink-400 items-center gap-1">
+        <GiSevenPointedStar className="text-xs" /> {feature?.name} <span className="mx-2">{'=>'}</span>
       </h2>
-      <p className="ml-[1%]">{feature?.detail}</p>
+      <p className="ml-[%]">{feature?.detail}</p>
       
     </div>
   );
