@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import office from "../Assets/office.png";
 import TiltedCard from "./TiltedCard";
 
+
 const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
 
@@ -11,7 +12,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between  mb-[2%] text-white"
+      className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between   text-white"
       id="about"
     >
       <div
