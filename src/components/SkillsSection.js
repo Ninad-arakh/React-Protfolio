@@ -49,8 +49,8 @@ const SkillsSection = () => {
     <div
       className={`${
         section === "skills"
-          ? "sm:w-[70%] w-[90%]  mx-auto text-left  opacity-100 pt-[2%] border border-white rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
-          : "w-[0%] h-0  opacity-0 overflow-hidden border border-white  ease-in"
+          ? "sm:w-[70%] w-[90%]  mx-auto text-left  opacity-100 pt-[2%] border  border-gray-700 rounded-xl p-[2%] mt-[4%] ease-in-out duration-700 "
+          : "w-[0%] h-0  opacity-0 overflow-hidden border border-gray-700  ease-in"
       }`}
     >
       <h1 className="font-bold text-xl py-[1%] text-pink-700">

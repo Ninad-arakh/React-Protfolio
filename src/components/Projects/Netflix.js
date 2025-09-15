@@ -14,7 +14,7 @@ const Netflix = () => {
   }
   return (
     <div
-    className={`sm:w-[32%] my-[2%] sm:my-0 w-[90%] h-[32%] mx-auto sm:h-[100%] py-2 border sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500`}
+    className={`sm:w-[32%] my-[2%] sm:my-0 w-[90%] h-[32%] mx-auto sm:h-[100%] py-2 border border-gray-500 sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500`}
     >
       <div>
         <img alt="img" src={netflix} />

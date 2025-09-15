@@ -60,7 +60,7 @@ const Skills = () => {
       <div
         className={`${
           section === "experiance"
-            ? "sm:w-[70%] w-[90%] mx-auto text-left opacity-100 pt-[2%] border border-white rounded-xl p-[2%]  ease-in-out duration-700 mt-[4%]"
+            ? "sm:w-[70%] w-[90%] mx-auto text-left opacity-100 pt-[2%] border border-gray-700 rounded-xl p-[2%]  ease-in-out duration-700 mt-[4%]"
             : "w-[0%] h-0 opacity-0 overflow-hidden mt-[4%]  ease-in-out"
         }`}
       >
@@ -135,7 +135,7 @@ const Skills = () => {
           <br></br>
         </div>
 
-        <div>
+        {/* <div>
           <h1 className="font-bold flex justify-between py-[2%]">
             <p className=" sm:text-xl text-pink-700">Codesoft Internship 💻</p>
             <p> Jan 2024 - Feb 2024</p>
@@ -148,7 +148,7 @@ const Skills = () => {
             projects results in certification, validating the skills acquired.
           </p>
           <br></br>
-        </div>
+        </div> */}
 
         <div>
           <h1 className="font-bold flex justify-between py-[2%]">
@@ -170,7 +170,7 @@ const Skills = () => {
       <div
         className={`${
           section === "education"
-            ? "sm:w-[70%] w-[90%] mx-auto  opacity-100  text-left border border-white rounded-xl p-[2%] mb-[4%] ease-in-out duration-700 pb-4"
+            ? "sm:w-[70%] w-[90%] mx-auto  opacity-100  text-left border border-gray-700 rounded-xl p-[2%] mb-[4%] ease-in-out duration-700 pb-4"
             : "w-[0%] h-0 overflow-hidden opacity-0  ease-in-out"
         }`}
       >

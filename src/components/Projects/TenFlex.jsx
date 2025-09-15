@@ -14,7 +14,7 @@ const TenFlex = () => {
   };
   return (
     <div
-      className={`sm:w-[32%] w-[90%] my-[2%] sm:my-0 h-[32%] mx-auto sm:h-[100%] py-2 border sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500 relative`}
+      className={`sm:w-[32%] w-[90%] my-[2%] sm:my-0 h-[32%] mx-auto sm:h-[100%] py-2 border  border-gray-500 sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500 relative`}
     >
       <div className="w-full h-full " >
         <img alt="image" src={TenFleximg} className="object-cover w-full h-full "/>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import office from "../Assets/office.png";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
@@ -7,7 +8,8 @@ const AboutMe = React.forwardRef((props, ref) => {
     setExpand(!expand);
   };
   return (
-    <div ref={ref}
+    <div
+      ref={ref}
       className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between  mb-[2%] text-white"
       id="about"
     >
@@ -35,10 +37,11 @@ const AboutMe = React.forwardRef((props, ref) => {
             expertise spans HTML, CSS, JavaScript, and modern frameworks like
             React, enabling me to build dynamic and responsive web applications.
             I enjoy transforming ideas into functional, user-friendly designs
-            that make a difference. I am always eager to grow and apply my knowledge.
+            that make a difference. I am always eager to grow and apply my
+            knowledge.
           </p>
           <br></br>
-          
+
           <h1 className="font-bold text-xl ">Get in Touch</h1>
           <p>
             I am open to new opportunities and collaborations. If you’d like to
@@ -51,14 +54,16 @@ const AboutMe = React.forwardRef((props, ref) => {
         </button>
       </div>
       <div
-        className={`${
-          !expand ? "sm:w-[25%] w-0 mr-[7%] py-[2%] " : "sm:w-[25%] w-0 py-[6%] mr-[7%]"
+        className={`group transition-all duration-500 ease-in-out  ${
+          !expand
+            ? "sm:w-[25%] w-0 mr-[7%] py-[2%]"
+            : "sm:w-[25%] w-0 py-[6%] mr-[7%]"
         }`}
       >
         <img
-          className="rounded-xl"
+          className="rounded-xl transition-transform duration-300 ease-in-out group-hover:rotate-3 group-hover:scale-105 hover:shadow-xl"
           alt="profile"
-          src="https://avatars.githubusercontent.com/u/119614703?v=4"
+          src={office}
         />
       </div>
     </div>

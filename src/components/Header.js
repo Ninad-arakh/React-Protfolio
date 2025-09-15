@@ -64,7 +64,7 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
   } else {
     return (
       <div className="pr-7 w-full flex justify-between fixed bg-opacity-60 backdrop-blur-sm ">
-        <div className="w-[8%] pt-[1%] ml-[10%] self-center">
+        <div className="w-[8%] pt-[1%] ml-[10%] self-center z-50">
           <img alt="ninad img" src={logo} className="  " />
         </div>
 
