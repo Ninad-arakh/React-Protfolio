@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import office from "../Assets/office.png";
+import TiltedCard from "./TiltedCard";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
@@ -60,10 +61,27 @@ const AboutMe = React.forwardRef((props, ref) => {
             : "sm:w-[25%] w-0 py-[6%] mr-[7%]"
         }`}
       >
-        <img
+        {/* <img
           className="rounded-xl transition-transform duration-300 ease-in-out group-hover:rotate-3 group-hover:scale-105 hover:shadow-xl"
           alt="profile"
           src={office}
+        /> */}
+        <TiltedCard
+          imageSrc={office}
+          altText="Ninad Arakh"
+          captionText="Ninad_Arakh"
+          containerHeight="400px"
+          containerWidth="300px"
+          imageHeight="400px"
+          imageWidth="300px"
+          rotateAmplitude={12}
+          scaleOnHover={1.2}
+          showMobileWarning={false}
+          showTooltip={true}
+          displayOverlayContent={false}
+          overlayContent={
+            <p className="tilted-card-demo-text">Software Engineer</p>
+          }
         />
       </div>
     </div>
