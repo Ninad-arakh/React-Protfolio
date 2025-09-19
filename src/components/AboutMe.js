@@ -5,6 +5,10 @@ import TiltedCard from "./TiltedCard";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
+  const screenWidth = window.screen.width;
+  let isMobile;
+  if (screenWidth < 640) isMobile = true;
+
 
   const expandToggleHandler = () => {
     setExpand(!expand);
@@ -67,7 +71,7 @@ const AboutMe = React.forwardRef((props, ref) => {
           alt="profile"
           src={office}
         /> */}
-        <TiltedCard
+        {!isMobile && <TiltedCard
           imageSrc={office}
           altText="Ninad Arakh"
           captionText="Ninad_Arakh"
@@ -83,7 +87,7 @@ const AboutMe = React.forwardRef((props, ref) => {
           overlayContent={
             <p className="tilted-card-demo-text">Software Engineer</p>
           }
-        />
+        />}
       </div>
     </div>
   );

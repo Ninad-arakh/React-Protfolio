@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Preloader from "./Preloader";
 import { useDispatch, useSelector } from "react-redux";
 import { changeState } from "../Utils/preloaderSlice";
+import Footer from "./Footer";
 
 const Body = () => {
   const AboutRef = useRef(null);
@@ -65,6 +66,7 @@ const Body = () => {
         <Skills />
         <Projects ref={ProjectsRef}/>
         <Contact ref={ContactRef}/>
+        <Footer />
       </div>
     );
   }

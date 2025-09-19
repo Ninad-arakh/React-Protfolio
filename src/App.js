@@ -38,7 +38,7 @@ function App() {
     <Provider store={Store}>
       <div className="App w-[100%]">
         <RouterProvider router={router} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Provider>
   );
