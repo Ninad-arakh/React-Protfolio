@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import office from "../Assets/office.png";
 import TiltedCard from "./TiltedCard";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = React.forwardRef((props, ref) => {
   const [expand, setExpand] = useState(false);
@@ -9,6 +13,24 @@ const AboutMe = React.forwardRef((props, ref) => {
   let isMobile;
   if (screenWidth < 640) isMobile = true;
 
+  useGSAP(() => {
+    if (!isMobile) {
+      gsap.from(ref.current, {
+        y: 100,
+        duration: 1,
+        delay: 0.8,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ref.current,
+          scroller: "body",
+          start: "top 35%",
+          // markers: true,
+          end: "top 70%",
+          scrub: 2,
+        },
+      });
+    }
+  }, []);
 
   const expandToggleHandler = () => {
     setExpand(!expand);
@@ -16,13 +38,13 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between   text-white"
+      className="flex sm:pl-[9%] pl-5 mt-6 sm:mt-0 pt-[6%] justify-between   text-white "
       id="about"
     >
       <div
         className={`${
           !expand
-            ? "sm:w-[65%]  rounded-xl px-[1%] pt-[1%] h-96"
+            ? "sm:w-[65%]  rounded-xl px-[1%] pt-[1%] h-96 "
             : "sm:w-[65%]  rounded-xl px-[1%] py-[1%] "
         }`}
       >
@@ -71,23 +93,25 @@ const AboutMe = React.forwardRef((props, ref) => {
           alt="profile"
           src={office}
         /> */}
-        {!isMobile && <TiltedCard
-          imageSrc={office}
-          altText="Ninad Arakh"
-          captionText="Ninad_Arakh"
-          containerHeight="400px"
-          containerWidth="300px"
-          imageHeight="400px"
-          imageWidth="300px"
-          rotateAmplitude={12}
-          scaleOnHover={1.2}
-          showMobileWarning={false}
-          showTooltip={true}
-          displayOverlayContent={false}
-          overlayContent={
-            <p className="tilted-card-demo-text">Software Engineer</p>
-          }
-        />}
+        {!isMobile && (
+          <TiltedCard
+            imageSrc={office}
+            altText="Ninad Arakh"
+            captionText="Ninad_Arakh"
+            containerHeight="400px"
+            containerWidth="300px"
+            imageHeight="400px"
+            imageWidth="300px"
+            rotateAmplitude={12}
+            scaleOnHover={1.2}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={false}
+            overlayContent={
+              <p className="tilted-card-demo-text">Software Engineer</p>
+            }
+          />
+        )}
       </div>
     </div>
   );

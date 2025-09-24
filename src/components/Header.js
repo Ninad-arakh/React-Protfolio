@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../Assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { IoIosCloseCircle } from "react-icons/io";
@@ -10,8 +10,8 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
   const navigate = useNavigate();
   const [menu, setMenu] = useState(false);
 
-  const logoRef = useRef()
-  const menuRef = useRef()
+  const logoRef = useRef();
+  const menuRef = useRef();
 
   const screenWidth = window.screen.width;
   let isMobile;
@@ -22,48 +22,48 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
     navigate("/");
   };
 
-  useGSAP(()=>{
-    const tl = gsap.timeline()
+  useGSAP(() => {
+    const tl = gsap.timeline();
     tl.from(logoRef.current, {
       y: -20,
-      duration: 1, 
+      duration: 1,
       delay: 0.2,
       opacity: 0,
-      ease: "back.out(1.7)"
-    })
-    if(!isMobile) {
-    tl.from(menuRef.current.querySelectorAll("li"), {
-      y: -20,
-      duration: 0.5,
-      opacity: 0,
-      stagger: 0.2
-    },"-=0.5")
-  }
-  })
+      ease: "back.out(1.7)",
+    });
+    if (!isMobile) {
+      tl.from(menuRef.current.querySelectorAll("li"), {
+        y: -20,
+        duration: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+      });
+    }
+  },[]);
 
   useEffect(() => {
-  if (isMobile && menu && menuRef.current) {
-    const tl = gsap.timeline();
-    tl.from("#div",{
-      x: 200,
-      duration: 0.3,
-      opacity: 0,
-      ease: "power1.out"
-    })
-    tl.from(menuRef.current.querySelectorAll("li"), {
-      x: 20,
-      duration: 0.3,
-      opacity: 0,
-      stagger: 0.2,
-    });
-  }
-}, [menu, isMobile]);
+    if (isMobile && menu && menuRef.current) {
+      const tl = gsap.timeline();
+      tl.from("#div", {
+        x: 200,
+        duration: 0.3,
+        opacity: 0,
+        ease: "power1.out",
+      });
+      tl.from(menuRef.current.querySelectorAll("li"), {
+        x: 20,
+        duration: 0.3,
+        opacity: 0,
+        stagger: 0.2,
+      });
+    }
+  }, [menu, isMobile]);
 
   if (isMobile) {
     return (
       <div className="pt-2 pr-7 w-full flex justify-between fixed bg-opacity-60 backdrop-blur-sm ">
         <div className="w-[18%] py-[2%] ml-[5%] self-center">
-          <img alt="ninad img" src={logo} ref={logoRef}/>
+          <img alt="ninad img" src={logo} ref={logoRef} />
         </div>
         <div
           className="text-white text-[30px] self-center absolute top-3 right-1 relaive"
@@ -72,7 +72,10 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
           {menu ? <IoIosCloseCircle /> : <TiThMenu />}
         </div>
         {menu && (
-          <div className="-z-10 pt-[10%] absolute top-0 w-[60%] right-0 h-screen bg-gradient-to-r from-purple-800 via-blue-900 to-gray-900 flex justify-center " id="div">
+          <div
+            className="-z-10 pt-[10%] absolute top-0 w-[60%] right-0 h-screen bg-gradient-to-r from-purple-800 via-blue-900 to-gray-900 flex justify-center "
+            id="div"
+          >
             <ul className="flex text-white font-bold flex-col" ref={menuRef}>
               <li
                 className="text-[30px] py-[8%] px-[10%] "
@@ -106,9 +109,9 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
     );
   } else {
     return (
-      <div className="pr-7 w-full flex justify-between fixed bg-opacity-60 backdrop-blur-sm ">
+      <div className="pr-7 w-full flex justify-between fixed bg-opacity-60  backdrop-blur-sm ">
         <div className="w-[8%] pt-[1%] ml-[10%] self-center z-50">
-          <img alt="ninad img" src={logo} ref={logoRef}/>
+          <img alt="ninad img" src={logo} ref={logoRef} />
         </div>
 
         <div className="text-white mr-[9%]  self-center">
