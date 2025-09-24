@@ -15,16 +15,21 @@ const SkillsSection = () => {
     "ReactJs",
     "NodeJs",
     "ExpressJs",
+    "GSAP",
+    "Framer_Motion",
+    "Material_UI",
+    "CSS",
+    "TailwindCss",
+    "BootStrap",
+    "DaisyUI",
     "MongoDB",
     "Angular",
     "ReduxJs",
-    "TailwindCss",
-    "DaisyUI",
-    "CSS",
-    "BootStrap",
-    "Spring Boot",
-    "REST API",
-    "MYSQL",
+    "Web Sockets",
+    "Jest",
+    "SpringBoot",
+    "REST_API",
+    ,
   ];
 
   const other = [
@@ -34,9 +39,7 @@ const SkillsSection = () => {
     "Microservices",
     "LLD",
     "Operating System",
-    "Jest",
     "Rest API",
-    "Web Sockets",
     "Vs Code",
     "Artificial Intelligence",
     "Team Work",
@@ -62,16 +65,12 @@ const SkillsSection = () => {
           <span className="texts">javascript</span>
         </div>
         <div className=" group w-[6%] flex flex-col items-center">
-          <FaJava className="icons group-hover:text-red-600" />
-          <span className="texts">java</span>
-        </div>
-        <div className=" group w-[6%] flex flex-col items-center">
           <BiLogoTypescript className="icons group-hover:text-blue-500" />
           <span className="texts">typescript</span>
         </div>
         <div className=" group w-[6%] flex flex-col items-center">
-          <FaDatabase className="icons group-hover:text-teal-500" />
-          <span className="texts">SQL</span>
+          <FaJava className="icons group-hover:text-red-600" />
+          <span className="texts">java</span>
         </div>
         <div className=" group w-[6%] flex flex-col items-center">
           <SiCplusplus className="icons group-hover:text-blue-500" />
@@ -81,6 +80,11 @@ const SkillsSection = () => {
           <FaHtml5 className="icons group-hover:text-orange-600" />
           <span className="texts">HTML</span>
         </div>
+        <div className=" group w-[6%] flex flex-col items-center">
+          <FaDatabase className="icons group-hover:text-teal-500" />
+          <span className="texts">SQL</span>
+        </div>
+        
       </div>
       <br></br>
 
@@ -91,7 +95,7 @@ const SkillsSection = () => {
         <div className="flex flex-wrap">
           {frameworks.map((item, i) => (
             <span key={i} className="px-1">
-              {item}
+              {item},
             </span>
           ))}
         </div>

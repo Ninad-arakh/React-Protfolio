@@ -1,12 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../Assets/logo.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosCloseCircle } from "react-icons/io";
 import { TiThMenu } from "react-icons/ti";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
+const Header = ({
+  scrollToAbout,
+  scrollToSkill,
+  scrollToProject,
+  scrollToContact,
+  tl,
+}) => {
   const navigate = useNavigate();
   const [menu, setMenu] = useState(false);
 
@@ -23,34 +29,36 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
   };
 
   useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from(logoRef.current, {
-      y: -20,
-      duration: 1,
-      delay: 0.2,
-      opacity: 0,
-      ease: "back.out(1.7)",
-    });
-    if (!isMobile) {
-      tl.from(menuRef.current.querySelectorAll("li"), {
+    console.log("timeline", tl);
+    if (tl) {
+      tl.from(logoRef.current, {
         y: -20,
-        duration: 0.5,
+        duration: 0.2,
+        delay: 0.2,
         opacity: 0,
-        stagger: 0.2,
+        ease: "back.out(1.7)",
       });
+      if (!isMobile) {
+        tl.from(menuRef.current.querySelectorAll("li"), {
+          y: -20,
+          duration: 0.2,
+          opacity: 0,
+          stagger: 0.2,
+        });
+      }
     }
-  },[]);
+  }, []);
 
   useEffect(() => {
     if (isMobile && menu && menuRef.current) {
-      const tl = gsap.timeline();
-      tl.from("#div", {
+      const tl2 = gsap.timeline();
+      tl2.from("#div", {
         x: 200,
         duration: 0.3,
         opacity: 0,
         ease: "power1.out",
       });
-      tl.from(menuRef.current.querySelectorAll("li"), {
+      tl2.from(menuRef.current.querySelectorAll("li"), {
         x: 20,
         duration: 0.3,
         opacity: 0,
@@ -111,7 +119,13 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
     return (
       <div className="pr-7 w-full flex justify-between fixed bg-opacity-60  backdrop-blur-sm ">
         <div className="w-[8%] pt-[1%] ml-[10%] self-center z-50">
-          <img alt="ninad img" src={logo} ref={logoRef} />
+          <img
+            onClick={() => handleOnClick("Home")}
+            className="cursor-pointer"
+            alt="ninad img"
+            src={logo}
+            ref={logoRef}
+          />
         </div>
 
         <div className="text-white mr-[9%]  self-center">
@@ -128,6 +142,13 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
               onClick={scrollToAbout}
             >
               About
+              <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-pink-600 group-hover:pl-[2%] group-hover:w-[100%] duration-500"></span>
+            </li>
+            <li
+              className=" px-[8%] cursor-pointer group relative   "
+              onClick={scrollToSkill}
+            >
+              Skills
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-pink-600 group-hover:pl-[2%] group-hover:w-[100%] duration-500"></span>
             </li>
             <li

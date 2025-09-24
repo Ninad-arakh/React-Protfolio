@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToButton } from "../Utils/ButtonSlice";
 import SkillsSection from "./SkillsSection";
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
   // const [section, setSection] = useState("skills");
   const dispatch = useDispatch();
 
@@ -14,7 +14,7 @@ const Skills = () => {
     // setSection(value);
   };
   return (
-    <div className="text-white justify-center text-center mt-[5%] mx-auto mb-[5%] w-[90%]  ">
+    <div ref={ref} className="text-white justify-center text-center mt-[5%] mx-auto mb-[5%] w-[90%]  ">
       {/* buttons */}
       <div className="justify-around">
         <button
@@ -196,6 +196,6 @@ const Skills = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Skills;

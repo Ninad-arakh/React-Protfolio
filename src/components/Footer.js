@@ -4,12 +4,12 @@ import { FaCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="text-white mx-auto flex  mt-[3%] mb-4 backdrop-blur-sm py-[1%] bg-opacity-20 bg-neutral-600  order-last">
-      <h1 className=" mx-auto flex">
+      <h1 className=" mx-auto flex ">
         Copyrights{" "}
         <span>
-          <FaCopyright className="mt-1 ml-3" />
+          <FaCopyright className="mt-1 ml-3 mr-1" />
         </span>{" "}
-        Ninad_Arakh.
+        Ninad_Arakh
       </h1>
     </div>
   );

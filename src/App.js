@@ -7,7 +7,9 @@ import Store from "./Utils/Store";
 import SingleProject from "./components/SingleProject";
 import Footer from "./components/Footer";
 import YtVideoDemo from "./components/YtVideoDemo";
+import gsap from "gsap";
 
+const tl = gsap.timeline();
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "projects",
-    element: <ProjectsPage />,
+    element: <ProjectsPage tl={tl}/>,
   },
   {
     path: "demoVideo",

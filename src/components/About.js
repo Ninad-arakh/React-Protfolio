@@ -5,7 +5,7 @@ import RotatingText from "./RotatingText";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const About = () => {
+const About = ({tl}) => {
   const [text] = useTypewriter({
     words: [
       "Software Engineer",
@@ -29,16 +29,14 @@ const About = () => {
 
   useGSAP(() => {
     if (!isMobile) {
-      gsap.from(leftRef.current, {
+      tl.from(leftRef.current, {
         x: -50,
-        duration: 1,
-        delay: 0.7,
+        duration: 0.5,
         opacity: 0,
       });
-      gsap.from(rightRef.current, {
+      tl.from(rightRef.current, {
         x: 50,
-        duration: 1,
-        delay: 0.7,
+        duration: 0.5,
         opacity: 0,
       });
     }
