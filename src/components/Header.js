@@ -34,7 +34,7 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
     if(!isMobile) {
     tl.from(menuRef.current.querySelectorAll("li"), {
       y: -20,
-      duration: 1,
+      duration: 0.5,
       opacity: 0,
       stagger: 0.2
     },"-=0.5")
@@ -46,13 +46,13 @@ const Header = ({ scrollToAbout, scrollToProject, scrollToContact }) => {
     const tl = gsap.timeline();
     tl.from("#div",{
       x: 200,
-      duration: 0.2,
+      duration: 0.3,
       opacity: 0,
       ease: "power1.out"
     })
     tl.from(menuRef.current.querySelectorAll("li"), {
       x: 20,
-      duration: 1,
+      duration: 0.3,
       opacity: 0,
       stagger: 0.2,
     });
