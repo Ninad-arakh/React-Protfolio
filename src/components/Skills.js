@@ -36,7 +36,7 @@ const Skills = React.forwardRef((props, ref) => {
           }
           onClick={() => handleOnClick("experiance")}
         >
-          Experiance
+          Experience
         </button>
 
         <button
