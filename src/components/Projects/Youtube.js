@@ -14,13 +14,13 @@ const Youtube = () => {
   };
   return (
     <div
-      className={`sm:w-[32%] w-[90%] my-[2%] sm:my-0 h-[32%] mx-auto sm:h-[100%] py-2 border border-gray-500 sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500`}
+      className={`sm:w-[32%] w-[90%] my-[2%] sm:my-0 h-[32%] mx-auto sm:h-[100%] py-2 border border-gray-500 sm:mx-[2%] group rounded-3xl overflow-hidden  hover:scale-110 duration-500 relative`}
     >
       <div className="">
         <img alt="image" src={YouTube} />
       </div>
 
-      <div className="bg-gradient-to-t from-pink-600 pb-[10%] sm:pb-[1%] group-hover:-translate-y-[100%] duration-200">
+      <div className="bg-gradient-to-t from-pink-600 absolute left-0 bottom-0 sm:pb-[1%] group-hover:translate-y-6 translate-y-full duration-200">
         <p className="text- bg-black bg-opacity-50 px-[2%] sm:px-[15%] sm:mb-5">
           ReactTube is a cutting-edge video streaming platform built with
           React.js and Redux for a seamless user experience. Designed for high
