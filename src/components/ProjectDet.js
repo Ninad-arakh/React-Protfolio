@@ -18,7 +18,7 @@ const ProjectDet = ({ details }) => {
         <div className="overflow-hidden  rounded-xl">
           <img
             className="  rounded-xl group-hover/img:scale-110 transition-all z-0 duration-300"
-            alt="image"
+            alt="im"
             src={details?.imageLink}
           />
         </div>

@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, {  useRef } from "react";
 import program from "../Assets/programing.png";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import RotatingText from "./RotatingText";
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const About = ({tl}) => {
@@ -85,7 +83,7 @@ const About = ({tl}) => {
         ref={rightRef}
         className="sm:w-[50%] w-[70%] sm:mr-[8%] pt-[3%] mx-auto "
       >
-        <img src={program} className="" />
+        <img src={program} className="" alt="img" />
       </div>
     </div>
   );

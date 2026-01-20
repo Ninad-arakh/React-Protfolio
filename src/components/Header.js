@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../Assets/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { IoIosCloseCircle } from "react-icons/io";
 import { TiThMenu } from "react-icons/ti";
 import gsap from "gsap";

@@ -26,6 +26,7 @@ const SingleProject = () => {
         <img
           className="fixed -z-10 w-screen bg-cover h-screen -mt-[8%] sm:-mt-[8%] -mx-[10%]"
           src={bgNight}
+          alt="bgImg"
         />
         <div className="flex justify-between sm:mt-0 mt-[15%]  ">
           <h1 className=" sm:text-3xl text-2xl sm:ml-0 -ml-[7%] font-semibold">
@@ -54,7 +55,7 @@ const SingleProject = () => {
             )}
 
             {data[0].isLive && (
-              <a href={data[0]?.liveLink} target="_blank">
+              <a href={data[0]?.liveLink} target="_blank" rel="noreferrer noopener">
                 <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-xl shadow-2xl group">
                   <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
                   {/* <!-- Top glass gradient --> */}
@@ -72,7 +73,7 @@ const SingleProject = () => {
               </a>
             )}
 
-            <a href={data[0]?.github} target="_blank">
+            <a href={data[0]?.github} target="_blank" rel="noreferrer noopener">
               <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-xl shadow-2xl group">
                 <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
                 {/* <!-- Top glass gradient --> */}

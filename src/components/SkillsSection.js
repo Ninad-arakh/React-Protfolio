@@ -4,7 +4,6 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { FaJava } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaDatabase } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
@@ -29,7 +28,6 @@ const SkillsSection = () => {
     "Jest",
     "SpringBoot",
     "REST_API",
-    ,
   ];
 
   const other = [

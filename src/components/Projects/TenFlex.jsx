@@ -24,7 +24,7 @@ const TenFlex = () => {
     >
       <div className="w-full h-full ">
         <img
-          alt="image"
+          alt="ima"
           src={TenFleximg}
           className="object-cover w-full h-full "
         />

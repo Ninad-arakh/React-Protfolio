@@ -74,6 +74,7 @@ const Skills = React.forwardRef((props, ref) => {
           <a
             href="https://www.entrepreneurshipnetwork.net/"
             target="_blank"
+            rel="noreferrer noopener"
             className="mb-2 hover:text-pink-300 hover:underline"
           >
             The Entrepreneurship Network - Remote

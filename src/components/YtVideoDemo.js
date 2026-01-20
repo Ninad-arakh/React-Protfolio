@@ -1,7 +1,6 @@
 import React from "react";
 import bgNight from "../Assets/bg-night.jpg";
 import { useSearchParams } from "react-router-dom";
-import Header from "./Header";
 
 const YtVideoDemo = () => {
   const [param] = useSearchParams();
@@ -13,6 +12,7 @@ const YtVideoDemo = () => {
         <img
           className="fixed -z-10 w-[100%] h-screen object-cover -mt-[8%] sm:-mt-[8%] -mx-[10%]"
           src={bgNight}
+          alt="background image"
         />
         <div className="py-[50%] sm:py-[10%]">
           <h1>Oops! The demo video isn’t available right now.</h1>
@@ -32,6 +32,7 @@ const YtVideoDemo = () => {
       <img
         className="fixed -z-10 w-[100%] h-screen object-cover -mt-[8%] sm:-mt-[8%] -mx-[10%]"
         src={bgNight}
+        alt="background image"
       />
 
       <div className="flex  justify-center w-[100%] h-[80vh] sm:h-[100vh] mt-[25%] sm:-mt-[7%] ">

@@ -5,7 +5,6 @@ import ProjectsPage from "./components/ProjectsPage";
 import { Provider } from "react-redux";
 import Store from "./Utils/Store";
 import SingleProject from "./components/SingleProject";
-import Footer from "./components/Footer";
 import YtVideoDemo from "./components/YtVideoDemo";
 import gsap from "gsap";
 

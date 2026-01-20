@@ -29,7 +29,7 @@ const Contact = React.forwardRef((props, ref) => {
         setTimeout(() => setMessage(""), 5000);
       } else {
         throw new Error("Error sending message. Please try again.");
-        toast.error("Failed to send message. Please try again.");
+        // toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error("Error!", error.message);
@@ -63,15 +63,17 @@ const Contact = React.forwardRef((props, ref) => {
               <a
                 href="https://linkedin.com/in/ninad-arakh-277747237"
                 target="_blank"
+                 rel="noreferrer noopener"
               >
                 <FaLinkedin className="hover:text-sky-700 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
               </a>
-              <a href="https://github.com/Ninad-arakh" target="_blank">
+              <a href="https://github.com/Ninad-arakh" target="_blank"  rel="noreferrer noopener">
                 <FaGithub className="hover:text-slate-100  hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
               </a>
               <a
                 href="https://www.instagram.com/ninad_arakh.exe/"
                 target="_blank"
+                 rel="noreferrer noopener"
               >
                 <FaInstagram className="hover:text-pink-600 hover:-translate-y-1 duration-200 mr-8 text-[30px] cursor-pointer" />
               </a>
@@ -79,7 +81,7 @@ const Contact = React.forwardRef((props, ref) => {
 
             <a
               href={ninad}
-              target="_blank"
+              target="_blank"  rel="noreferrer noopener"
               className="flex  justify-center mt-10"
             >
               {/* <button className=" px-8 py-3 ml-10 sm:ml-0 mt-6 rounded-lg bg-red-500 hover:bg-pink-600">

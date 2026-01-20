@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects/Projects";
@@ -26,7 +26,7 @@ const Body = () => {
     setTimeout(() =>{
       dispatch(changeState(false))
     }, 1000);
-  } , [])
+  })
 
   const scrollToAbout = () => {
     if (AboutRef.current) {
